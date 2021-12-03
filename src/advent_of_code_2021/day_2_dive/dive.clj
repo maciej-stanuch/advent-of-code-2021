@@ -31,7 +31,8 @@
      (let [next-state (command-execute-function (first commands) starting-state)]
        (calculate-final-state (rest commands) next-state command-execute-function)))))
 
-(defn dive [input]
+(defn dive
+  [input]
   (let [commands (map #(str/split % #" ") input)
         starting-state {:horizontal 0
                         :depth      0
@@ -42,7 +43,8 @@
                       execute-command-without-aim)]
     (* (:horizontal final-state) (:depth final-state))))
 
-(defn dive-extended [input]
+(defn dive-extended
+  [input]
   (let [commands (map #(str/split % #" ") input)
         starting-state {:horizontal 0
                         :depth      0
