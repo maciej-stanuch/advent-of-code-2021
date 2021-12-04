@@ -13,8 +13,8 @@
                         (day-2/dive day-2/input)]
                        ["Day 2 - Dive! Extended"
                         (day-2/dive-extended day-2/input)]
-                       ["Day 3 - Binary Diagnostics"
-                        (day-3/binary-diagnostic day-3/input)]
+                       ;["Day 3 - Binary Diagnostics"
+                       ; (day-3/binary-diagnostic day-3/input)]
                        ["Day 3 - Binary Diagnostics Extended"
                         (day-3/binary-diagnostic-extended day-3/input)]])
 
